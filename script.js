@@ -53,7 +53,7 @@ function handleTweetBtnClick(){
   if(tweetInput.value){
     tweetsData.unshift({
       handle: `@Scrimba`,
-      profilePic: `images/scrimbalogo.png`,
+      profilePic: `scrimbalogo.png`,
       likes: 0,
       retweets: 0,
       tweetText: tweetInput.value,
@@ -90,7 +90,7 @@ function getFeedHtml(){
         repliesHtml += `
         <div class="tweet-reply">
           <div class="tweet-inner">
-            <img src="/${reply.profilePic}" class="profile-pic">
+            <img src="${reply.profilePic}" class="profile-pic">
             <div>
               <p class="handle">${reply.handle}</p>
               <p class="tweet-text">${reply.tweetText}</p>
@@ -104,7 +104,7 @@ function getFeedHtml(){
     feedHtml += `
       <div class="tweet">
         <div class="tweet-inner">
-          <img class="profile-pic" src="/${tweet.profilePic}"></img>
+          <img class="profile-pic" src="${tweet.profilePic}"></img>
           <div>
             <p class="handle">${tweet.handle}</p>
             <p class="tweetText">${tweet.tweetText}</p>
